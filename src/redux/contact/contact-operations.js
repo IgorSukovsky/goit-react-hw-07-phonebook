@@ -44,4 +44,6 @@ const deleteContacts = id => dispatch => {
     .catch(error => dispatch(deleteContactError(error.massage)));
 };
 
-export default { fetchContact, addContacts, deleteContacts };
+
+const cotanctOperations = { fetchContact, addContacts, deleteContacts };
+export default cotanctOperations;

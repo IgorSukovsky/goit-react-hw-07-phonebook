@@ -43,9 +43,12 @@ const filter = createReducer('', {
 
 const error = createReducer(null, {});
 
-export default combineReducers({
+
+const contactReducer = combineReducers({
   items,
   filter,
   loading,
   error,
 });
+
+export default contactReducer;

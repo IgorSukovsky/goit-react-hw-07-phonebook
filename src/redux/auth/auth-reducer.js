@@ -38,9 +38,12 @@ const isAuthenticated = createReducer(false, {
   [authActions.logoutSuccess]: () => false,
 });
 
-export default combineReducers({
+
+const authReducer =combineReducers({
   user,
   isAuthenticated,
   token,
   error,
 });
+
+export default authReducer;
